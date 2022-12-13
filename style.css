@@ -111,6 +111,13 @@ span{
     font-weight: 400;
     text-align: center;
 }
+.link1{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
     .sec3{ 
         width: 43%;
@@ -123,6 +130,12 @@ span{
     }
     .container1{
         padding-left: 20px;
+    }
+    .container2{
+          display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:40px;
     }
     .sec4{
         width: 43%;
@@ -147,7 +160,7 @@ span{
     .container4:hover{
         transform: scale(1.05);
     }
-    .sec1:hover, .sec2:hover, .sec3:hover, .sec4:hover, .sec7:hover{
+     .sec2:hover, .sec3:hover, .sec4:hover, .sec7:hover{
         transform: scale(1.05);
     }
     .sec6{
