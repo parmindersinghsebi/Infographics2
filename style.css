@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 .main{
     display: flex;
     justify-content: center;
 }
+
 .container{
     width: 80%;
     background: #a598984a;
     border-radius: 50px;
+    background-image: url("wh0-we-are-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
    
     padding: 30px;
 }
@@ -15,7 +23,7 @@
 }
 .sec1{
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .sec2{
     display: none;
@@ -30,7 +38,7 @@
     width: 100%;
     padding: 20px;
     border-radius: 30px;
-    background: #c4b5c7;
+    background: #60a4de99;
     margin-right: 2%px;
     margin-bottom:30px;
     
@@ -39,11 +47,11 @@
     width: 100%;
     padding: 20px;
     border-radius: 30px;
-    background: #c4b5c7;
+    background: #60a4de99;
     margin-left: 2%px;
 }
 .img1{
-    width: 40%;
+    width: 90%;
 }
 .container4{
     display: flex;
@@ -78,21 +86,48 @@
     width: 100%;
     padding: 20px;
     border-radius: 30px;
-    background: #c4b5c7;
+    background: #60a4de99;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 h1{
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 0px;
 }
-h2{
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+
+.head1{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
     text-align: center;
+    color:#034ab4 ;
+    /* The typwriter cursor */
+    
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      
+  }
+ 
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  } 
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color:  transparent }
+    50% { border-color: transparent }
+  }
+
+h2{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #034ab4;
 }
 .head{
     text-align: left;
@@ -100,30 +135,31 @@ h2{
     margin-bottom: 0px;
 }
 h3{
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
     text-align: center;
 }
 span{
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-}
-.link1{
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
     text-align: center;
 }
+.link1{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 1000px) {
     .sec3{ 
         width: 43%;
         padding: 20px;
         border-radius: 30px;
-        background: #c4b5c7;
+        background: #60a4de99;
         margin-right: 2%;
         margin-bottom:0px;
         transition: width 1s, height 1s, background-color 1s, transform 1s;
@@ -133,27 +169,46 @@ span{
     }
     .container2{
           display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top:40px;
+          flex-wrap: wrap;
+          justify-content: center;
+           margin-top:40px;
     }
     .sec4{
         width: 43%;
         padding: 20px;
         border-radius: 30px;
-        background: #c4b5c7;
+        background: #60a4de99;
         margin-left: 2%;
         transition: width 1s, height 1s, background-color 1s, transform 1s;
     }
     .sec2{
-        display: contents;
+        display: flex;
+        width: 30%;
         transition: width 1s, height 1s, background-color 1s, transform 1s;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .sec1{
-        width: 60%;
-        padding-top: 70px;
+        width: 70%;
+        background-image: url("blue-shape-png-3.png");   
         transition: width 1s, height 1s, background-color 1s, transform 1s;
+        background-size: 100%100%;
+        background-repeat: no-repeat;      
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
+    .heading{
+        margin-top: 0px;
+    }
+    .head-dis{
+        font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+    }
+    
     .container4{
         transition: width 1s, height 1s, background-color 1s, transform 1s;
     }
@@ -205,8 +260,40 @@ span{
         width: 100%;
         padding: 20px;
         border-radius: 30px;
-        background: #c4b5c7;
+        background: #60a4de99;
         margin: 20px;
     }
-
+    .head1{
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        color:#034ab4 ;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        animation: 
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+          
+      }
+     
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      } 
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color:  transparent }
+        50% { border-color: transparent }
+      }
+    
   }
+
+
+
+  
+  
